@@ -1,0 +1,43 @@
+
+<nav class="navbar fixed-top navbar-light bg-warning">
+    <div class="container">
+        <a class="navbar-brand">Displaying Data from Firebase using Angular 4</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+
+
+  <div class="container table-responsive">          
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Area</th>
+            <th>Price</th>
+            <th>#Bed</th>
+            <th>#Kitchen</th>
+            <th>#Bath</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr *ngFor="let property of propertyList">
+            <td>{{property.desc}}</td>
+            <td>{{property.area}}</td>
+            <td>{{property.price}}</td>
+            <td>{{property.bed}}</td>
+            <td>{{property.kitchens}}</td>
+            <td>{{property.bath}}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+  <nav class="navbar fixed-bottom navbar-light bg-warning">
+    <div class="container">
+        <a class="navbar-brand" href="#">Copyright © 2018 Nagendra</a>
+    </div>
+  </nav>
